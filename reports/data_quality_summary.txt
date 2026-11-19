@@ -1,0 +1,21 @@
+# Data Quality Summary – Day 1
+
+1. Total CSV files loaded: 16 (10 original datasets + 6 live NAV datasets).
+
+2. Fund Master:
+   - 40 valid AMFI scheme codes found.
+   - 2 accidental non-numeric rows were identified and need cleaning.
+
+3. NAV History:
+   - All 40 valid AMFI codes are available in NAV History.
+   - Missing AMFI codes: 0.
+
+4. AUM Dataset:
+   - Actual rows: 95.
+   - Expected rows: Approximately 90.
+
+5. Live NAV:
+   - NAV data successfully fetched for 6 mutual fund schemes using mfapi.in.
+
+Conclusion:
+Data ingestion and AMFI code validation were completed successfully. Some data quality issues were identified for cleaning in the next stage.
